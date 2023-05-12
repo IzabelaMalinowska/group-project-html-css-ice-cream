@@ -1,0 +1,35 @@
+.gallery {
+  display: block;
+  max-width: 100%;
+
+  background: linear-gradient(
+    to bottom,
+    map-get($colors, 'background-rose') 30.8%,
+    map-get($colors, 'white-primary') 30.8%
+  );
+
+  &--container {
+    max-width: 1280px;
+  }
+}
+
+.gallery__images {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: $tablet) and (max-width: 1200px) {
+  .gallery__images {
+    margin-bottom: 121px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .gallery__images {
+    margin-bottom: 123px;
+  }
+}
